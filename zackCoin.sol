@@ -17,7 +17,7 @@ contract zackCoin {
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function SimpleToken(
+    function zackCoin(
         uint256 initialSupply,
         string tokenName,
         uint8 decimalUnits,
