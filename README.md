@@ -1,6 +1,7 @@
 # The zackCoin Ethereum blockchain smart-contract and ERC-20 compliant token
 This is a simple Ethereum smart-contract which can be modified and deployed to the Ethereum blockchain.
 The tokens within this smart-contract can be purchased by anyone.
+The contact can be found on the Rinkeby testnet at https://rinkeby.etherscan.io/address/0x6744c2ecd577a591a7f750dc85b5f1ed90b59f6b
 
 ## To deploy this contract (or one like it):
 ### Step 1
@@ -8,7 +9,7 @@ There are many different ways to deploy a smart-contract onto the Ethereum mainn
 
 We could accomplish this by deploying the contract through a dApp (decentralized application), which is typically done via a local/remote node connected and synced with the Ethereum blockchain (mainnet/testnet(s)).
 
-We could also deploy through the Chrome MetaMask plugin, which essentially connects your browser to a remote Ethereum node to interact with the Ethereum blockchain.
+We could also deploy through the Chrome MetaMask plugin (with Remix), which essentially connects your browser to a remote Ethereum node to interact with the Ethereum blockchain.
 
 The method I prefer for simple contract deployments is through Mist/Ethereum Wallet. The only downside to this method is that since this application runs a local Ethereum node on your machine, you will need to download the entire Ethereum blockchain prior to deploying your contract.
 
