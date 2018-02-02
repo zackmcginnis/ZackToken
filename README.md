@@ -1,4 +1,4 @@
-# The zackCoin Ethereum blockchain smart-contract and token
+# The zackCoin Ethereum blockchain smart-contract and ERC-20 compliant token
 This is a simple Ethereum smart-contract which can be modified and deployed to the Ethereum blockchain.
 The tokens within this smart-contract can be purchased by anyone.
 
