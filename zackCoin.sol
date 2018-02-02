@@ -33,7 +33,7 @@ contract ERC20Interface {
 //zackCoin will have a fixed supply and extend the ERC20 contract
 contract zackCoin is ERC20Interface {
     string public constant symbol = "FIXED";
-    string public constant name = "Example Fixed Supply Token";
+    string public constant name = "Zack Coin";
     uint8 public constant decimals = 18;
     uint256 _totalSupply = 1000000;
 

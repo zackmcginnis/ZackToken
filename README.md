@@ -1,7 +1,7 @@
 # The zackCoin Ethereum blockchain smart-contract and ERC-20 compliant token
 This is a simple Ethereum smart-contract which can be modified and deployed to the Ethereum blockchain.
 The tokens within this smart-contract can be purchased by anyone.
-The contact can be found on the Rinkeby testnet at https://rinkeby.etherscan.io/address/0x6744c2ecd577a591a7f750dc85b5f1ed90b59f6b
+The contact can be found on the Rinkeby testnet at https://rinkeby.etherscan.io/address/0xbfff505537ea19aad0a28ced8793e5d8496b809f
 
 ## To deploy this contract (or one like it):
 ### Step 1
