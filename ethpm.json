@@ -1,0 +1,17 @@
+{
+  "package_name": "Zack Token ICO Contract",
+  "version": "0.0.1",
+  "description": "The Zack Token ICO Contract",
+  "authors": [
+    "Zack McGinnis"
+  ],
+  "keywords": [
+    "ethereum",x
+    "blockchain",
+    "solidity"
+  ],
+  "dependencies": {
+    "zeppelin": "^1.3.0"
+  },
+  "license": "MIT"
+}
