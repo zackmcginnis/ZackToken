@@ -1,4 +1,4 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.23;
 
 import "./CappedCrowdsale.sol";
 import "./RefundableCrowdsale.sol";
@@ -18,7 +18,7 @@ import "./ZackToken.sol";
  */
 contract TokenCrowdsale is CappedCrowdsale, RefundableCrowdsale {
 
-  function TokenCrowdsale(uint256 _numberOfTokensToCreate, uint256 _startTime, uint256 _endTime, uint256 _rate, uint256 _goal, uint256 _cap, address _wallet)
+  constructor(uint256 _numberOfTokensToCreate, uint256 _startTime, uint256 _endTime, uint256 _rate, uint256 _goal, uint256 _cap, address _wallet)
     CappedCrowdsale(_cap)
     FinalizableCrowdsale()
     RefundableCrowdsale(_goal)

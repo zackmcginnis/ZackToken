@@ -1,4 +1,4 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.23;
 
 
 import './SafeMath.sol';
@@ -21,7 +21,7 @@ contract RefundableCrowdsale is FinalizableCrowdsale {
   // refund vault used to hold funds while crowdsale is running
   RefundVault public vault;
 
-  function RefundableCrowdsale(uint256 _goal) {
+  constructor(uint256 _goal) {
     require(_goal > 0);
     vault = new RefundVault(wallet);
     goal = _goal;

@@ -1,4 +1,4 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.23;
 
 
 import "./StandardToken.sol";
@@ -19,14 +19,13 @@ import "./StandardToken.sol";
 
    event LogOwner(address ownerToLog);
 
-   function ZackToken(uint256 _totalSupply, address _owner) public {
+   constructor(uint256 _totalSupply, address _owner) public {
      //set owner (same address who deployed ico contract)
      tokenOwner = _owner;
-     LogOwner(_owner);
-     LogOwner(tokenOwner);
+     emit LogOwner(tokenOwner);
      // Allocate fixed supply to token Creator
      totalSupply_ = _totalSupply * (10 ** uint256(decimals));
      balances[msg.sender] = totalSupply_;
-     Transfer(address(0), msg.sender, totalSupply_);
+     emit Transfer(address(0), msg.sender, totalSupply_);
    }
  }

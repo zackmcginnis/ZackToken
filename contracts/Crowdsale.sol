@@ -1,4 +1,4 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.23;
 
 import './ZackToken.sol';
 import './SafeMath.sol';
@@ -41,7 +41,7 @@ contract Crowdsale {
   event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
 
 
-  function Crowdsale(uint256 _numberOfTokensToCreate, uint256 _startTime, uint256 _endTime, uint256 _rate, address _wallet) {
+  constructor(uint256 _numberOfTokensToCreate, uint256 _startTime, uint256 _endTime, uint256 _rate, address _wallet) {
     //require(_startTime >= now); //comment out for testing
     require(_endTime >= _startTime);
     require(_rate > 0);
@@ -85,7 +85,7 @@ contract Crowdsale {
     // token.mint(beneficiary, tokens);
     require(token.transfer(beneficiary, tokens));
 
-    TokenPurchase(msg.sender, beneficiary, weiAmount, tokens);
+    emit TokenPurchase(msg.sender, beneficiary, weiAmount, tokens);
 
     forwardFunds();
   }
